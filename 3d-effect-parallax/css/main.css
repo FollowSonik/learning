@@ -24,6 +24,7 @@ body {
   background-color: #000;
   color: whitesmoke;
   font-family: kamerik-3d;
+  overflow: hidden;
 }
 
 .logo {
