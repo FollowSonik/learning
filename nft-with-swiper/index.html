@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/normalize.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="styles/style.css">
+  <title>nft-wth-swiper.</title>
+</head>
+<body>
+  <div class="content">
+    <div class="content-sidebar">
+      <button class="content-sidebar-btn" type="button"></button>
+      <ul class="content-sidebar-list">
+        <li class="content-sidebar-item"><a class="content-sidebar-link content-sidebar-fb" target="_blank" href="#"></a></li>
+        <li class="content-sidebar-item"><a class="content-sidebar-link content-sidebar-inst" target="_blank" href="#"></a></li>
+        <li class="content-sidebar-item"><a class="content-sidebar-link content-sidebar-tw" target="_blank" href="#"></a></li>
+      </ul>
+    </div>
+    <header class="content-header">
+      <a href="#" class="content-header-logo"></a>
+      <nav>
+        <ul class="content-header-list">
+          <li class="content-header-item"><a class="content-header-link active" href="#">home.</a></li>
+          <li class="content-header-item"><a class="content-header-link" href="#">roadmap.</a></li>
+          <li class="content-header-item"><a class="content-header-link" href="#">about us.</a></li>
+          <li class="content-header-item"><a class="content-header-link wallet" href="#"></a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="content-main">
+      <div class="swiper my-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">Slide 1</div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+          <div class="swiper-slide">Slide 4</div>
+          <div class="swiper-slide">Slide 5</div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </main>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <script>
+    new Swiper(".my-swiper", {
+      direction: "vertical",
+      slidesPerView: 1,
+      spaceBetween: 30,
+      mousewheel: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+      }
+    });
+  </script>
+</body>
+</html>

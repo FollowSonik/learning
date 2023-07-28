@@ -1,0 +1,159 @@
+html {
+  color-scheme: dark light;
+}
+
+body {
+  background: linear-gradient(108.76deg, #343131 -1.39%, #1D1919 102.08%) no-repeat;
+  font-family: menlo, sans-serif;
+}
+
+body, html {
+  height: 100vh;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  grid-template-rows: 98px 1fr;
+  height: 100%;
+  gap: 60px;
+}
+
+.content-sidebar {
+  border-right: 1px solid #505050;
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content-sidebar-btn {
+  display: block;
+  width: 100%;
+  height: 98px;
+  background: linear-gradient(127.44deg, #505050 0%, #383838 100%);
+  border: none;
+  position: relative;
+}
+
+.content-sidebar-btn::after {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-image: url(../images/menu.svg);
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  background-position: center center;
+  position: absolute;
+  top: calc(50% - 12px);
+  left: calc(50% - 12px);
+}
+
+.content-sidebar-list {
+  list-style: none;
+  margin-bottom: 60px;
+  padding-left: 0;
+}
+
+.content-sidebar-link {
+  display: block;
+  margin: 0 auto;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.content-sidebar-item {
+  margin-top: 63px;
+}
+
+.content-sidebar-fb {
+  background-image: url(../images/fb.svg);
+}
+
+.content-sidebar-inst {
+  background-image: url(../images/inst.svg);
+}
+
+.content-sidebar-tw {
+  background-image: url(../images/tw.svg);
+}
+
+.content-header {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 70px;
+}
+
+.content-main {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.content-header-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.content-header-item {
+  margin-left: 67px;
+}
+
+.content-header-item:first-child {
+  margin-left: 0;
+}
+
+.content-header-link {
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+  position: relative;
+}
+
+.content-header-link::after {
+  content: "";
+  width: 22px;
+  height: 2px;
+  display: block;
+  bottom: -14px;
+  position: absolute;
+  background-color: white;
+  opacity: 0;
+  transition: .2s;
+}
+
+.content-header-link.active {
+  font-weight: bold;
+}
+
+.content-header-link.active::after,
+.content-header-link:hover::after {
+  opacity: 1;
+}
+
+.content-header-link.wallet {
+  display: block;
+  background-image: url(../images/wallet.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+}
+
+.content-header-logo {
+  display: block;
+  width: 103px;
+  height: 31px;
+  background-image: url(../images/logo.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
