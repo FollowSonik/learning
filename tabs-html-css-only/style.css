@@ -11,6 +11,10 @@ body {
   padding: 25px;
 }
 
+.my-tabs input + label {
+  user-select: none;
+}
+
 .my-tabs input[type="radio"] {
   display: none;
 }
