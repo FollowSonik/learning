@@ -20,11 +20,11 @@ body {
   background-color: #9a9a9a;
   font-weight: bold;
   cursor: pointer;
+  transition: background-color .2s ease-in-out;
 }
 
-.my-tabs label:hover {
-  background-color: #b9b9b9;
-  transition: background-color .2s ease-in;
+.my-tabs :not(input[type="radio"]:checked) + label:hover {
+  background-color: #cccccc;
 }
 
 .my-tabs .tab {
