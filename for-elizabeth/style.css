@@ -1,0 +1,52 @@
+body {
+  background-color: #e3e3e3;
+  font-family: menlo, Arial, Helvetica, sans-serif;
+}
+
+.my-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 25px;
+}
+
+.my-tabs input + label {
+  user-select: none;
+}
+
+.my-tabs input[type="radio"] {
+  display: none;
+}
+
+.my-tabs label {
+  padding: 25px;
+  background-color: #9a9a9a;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color .2s ease-in-out;
+}
+
+.my-tabs :not(input[type="radio"]:checked) + label:hover {
+  background-color: #cccccc;
+}
+
+.my-tabs .tab {
+  width: 100%;
+  padding: 20px;
+  background-color: white;
+  order: 1;
+  display: none;
+}
+
+.my-tabs .tab h2 {
+  font-size: 3em;
+}
+
+.my-tabs input[type="radio"]:checked + label + .tab {
+  display: block;
+}
+
+.my-tabs input[type="radio"]:checked + label {
+  background-color: white;
+}
